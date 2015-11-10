@@ -47,6 +47,9 @@ else
   HOMEBREW_REPOSITORY+"Cellar"
 end
 
+# Where we store linkapps symlinks
+HOMEBREW_APPLINKS = HOMEBREW_PREFIX/"AppLinks"
+
 HOMEBREW_LOGS = Pathname.new(ENV["HOMEBREW_LOGS"] || "~/Library/Logs/Homebrew/").expand_path
 
 HOMEBREW_TEMP = Pathname.new(ENV.fetch("HOMEBREW_TEMP", "/tmp"))
